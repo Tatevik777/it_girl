@@ -1,0 +1,71 @@
+
+h1{
+    background-color:#f7e26d;
+    color: #392ea1;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2{
+    background-color:#8ef1e4 ; 
+    color: #392ea1;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: oblique;
+}
+ div{  
+    color: #320fe6;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:large;
+    font-style: oblique; 
+}
+
+#date{
+    color: #320fe6;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:large;
+    font-style: oblique;
+}
+
+#submit{
+    color: #f28f17;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:large;
+    font-style: oblique;
+} 
+a:hover {
+    color: rgb(246, 80, 191);
+}
+
+a:active {
+    color: red;
+}
+
