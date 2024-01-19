@@ -6,20 +6,22 @@
     <title>Document</title>
 </head>
  <style>
+    .container{
+        display: grid;
+        width: 100%;
+    }
     .nav{
         display: grid;
         background-color: antiquewhite;
         width: 100%;
         height:70px;
         grid-template-columns:1fr 1fr 50% 1fr 1fr;
-    }
-       
+    } 
     .logo{
         align-self:center;
         grid-column-start: 1;
         padding-left: 20px;
         width: 100%;
-
     }
     .nav_info{
         display: grid;
@@ -28,7 +30,6 @@
         grid-column: 3;
         font-size: 1em;
     }
-  
     .method,.teachers,.groups,.feedback,.contacts{
         display: grid;
         width: 100%;
@@ -42,8 +43,7 @@
     .phone_number{
         align-self:center;
         grid-column-start: 5;
-        width: 100%;
-        
+        width: 100%;    
     } 
     .info{
         display: grid;
@@ -54,12 +54,10 @@
         grid-template-rows:1fr 1fr 1fr 1fr;
     }
     .extra_cloud{
-        display:grid;
-        
+        display:grid;   
     }
     .extra_car{
         display: grid;
-
     }
 
       .title{
@@ -89,7 +87,7 @@
         text-align: center;
         font-size:1em ;
         padding: 10px;
-        width: 50%;
+        width: 70%;
         height: 50px;
         border-radius: 35px;
         background: #FFD787;
@@ -97,19 +95,18 @@
         grid-row:4;
         }
         .main{
+        width: 100%;
         background-color: antiquewhite;
+      
     }
 
      .titles{
         display: grid;
         grid-template-columns:1fr 1fr; 
         grid-template-rows: 1fr;
-        padding-top: 30px; 
-        padding-left: 100px;
      }
      .title1,.title2{
         padding-left: 20px;
-     
         color: darkblue; 
         font-size:25px ; 
         font-weight:bold; 
@@ -117,72 +114,143 @@
      }
      .text1 {
         color: darkblue; 
-        font-size:20px ; 
+        font-size:1em ; 
         padding-top: 20px;
         padding-left: 20px;
-        width: 600px; 
+        width: 90%; 
      }
      .video_lesson{
         padding-top: 20px;
      }
-   
+     .main_title{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: darkblue; 
+        font-weight:bold;
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+    .main_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+     @media  screen and (max-width: 599px){
+        .nav{
+            display: none;
+        }
+        .main_container{
+        display: grid;
+        grid-template-columns:1fr;  
+    }
+    .info{display: grid;
+        background-image: url(./assets/main_photo.png);
+        background-size:599px 450px ;
+        background-repeat: no-repeat;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        width: 100%;
+       
+    }
+}
+@media  screen and (max-width: 950px) and (min-width:650px){
+    .info{display: grid;
+        background-size:100% 450px ;
+        background-repeat: no-repeat;
+       
+    }
+        .main_container{
+        display: grid;
+        grid-template-columns:1fr; 
+        grid-template-rows:repeat(4);; 
+       
+    }
+        .title1{
+            grid-row:1;
+            height:min-content;
+            height:40px;
+        }
+        .text1{
+            grid-row:2;
+            height:min-content;
+            height:100px;
+        }
+        .title2{
+            grid-row:3; 
+            height:40px;
+        }
+        .video_lesson{
+            grid-row:4;
+            height:400px;
+        }
+}
+
  </style>
 <body>
-    <div class="nav">
-        <div class="logo">
-            <img src="/week7/assets/CleverBaby.png" width="80%">
-        </div>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="/week7/assets/CleverBaby.png" width="80%">
+            </div>
+            
+        <div class="nav_info">
+            <div class="method">
+                Методика
+            </div>
+            <div class="teachers">
+                Преподаватели
+            </div>
+            <div class="groups">
+                Группы
+            </div>
+            <div class="feedback">
+                Отзывы
+            </div>
+            <div class="contacts">
+                Контакты
+            </div>
         
-    <div class="nav_info">
-        <div class="method">
-            Методика
         </div>
-        <div class="teachers">
-            Преподаватели
+        <div class="phone_number">
+            <img src="/week7/assets/+ 7 (495) 983-47-19.png" width="80%">
+        </div> 
         </div>
-        <div class="groups">
-            Группы
-        </div>
-        <div class="feedback">
-            Отзывы
-        </div>
-        <div class="contacts">
-            Контакты
-        </div>
+       <div class="info">
+        <div class="extra_car">
+            <img src="/week7/assets/car.png">
     
-    </div>
-    <div class="phone_number">
-        <img src="/week7/assets/+ 7 (495) 983-47-19.png" width="80%">
-    </div> 
-    </div>
-   <div class="info">
-    <div class="extra_car">
-        <img src="/week7/assets/car.png">
-
-
-    </div>
-    <div class="extra_cloud">
-        <img src="/week7/assets/cloud.svg">
-    </div>
-    <div class="title">
-        Английский язык
-    </div>
-    <div class="smaller_title">
-        для детей от 2 до 7 лет
-    </div>
-    <div class="promotion_title">
-        Гармоничное развитие детей и обучение через погружение  в языковую среду
-    </div>
- 
-    <button class="join_button">
-        Записаться
-    </button> 
-   </div>
-   <div class="main">
-    <div class="titles">
+    
+        </div>
+        <div class="extra_cloud">
+            <img src="/week7/assets/cloud.svg">
+        </div>
+        <div class="title">
+            Английский язык
+        </div>
+        <div class="smaller_title">
+            для детей от 2 до 7 лет
+        </div>
+        <div class="promotion_title">
+            Гармоничное развитие детей и обучение через погружение  в языковую среду
+        </div>
+     
+        <button class="join_button">
+            Записаться
+        </button> 
+       </div>
+       <div class="main">
+        <div class="main_title">
+            <div class="extra_girl">
+                <img src="/week6/assets/girl.png">
+            </div>  
+            Как проходит обучение 
+            <div class="extra_rocket">
+                <img src="/week6/assets/rocket.png">
+            </div> 
+        </div>
+       <div class="main_container">
         <div class="title1">
             Играя - обучаем, обучая - развиваем
-            
         </div>
         <div class="title2">
             Посмотрите, как проходят наши занятия
@@ -197,13 +265,14 @@
             Cambriddge. Благодаря этому, наши ученикибез труда сдают
             международные и государственные экзамены.
         </div>
+
         <div class="video_lesson">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NIk1-ck4c6Q?si=ybtHdTaydGK_O6y8"
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+       </div>       
     </div>
-</div>
-</div>
+</div> 
 </body>
 </html>
