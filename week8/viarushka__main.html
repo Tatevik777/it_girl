@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .main{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 15% 1fr auto 1fr ;
+    }
+    .main__logo{
+        grid-column:1;
+        grid-row:1;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left:40px;
+        align-self: center;
+    }
+    .main__cartbutton{
+        border-radius: 35px;
+        background:rgb(81, 3, 177);
+        grid-column: 1;
+        grid-row:1;
+        align-self: center;
+        text-align:center;
+        padding: 10px;
+        width:120px;
+        height:30px;
+        font-size: 1em;
+        font-weight: bold;
+        color:aliceblue;
+        justify-self:right;    
+    }
+    .main__title{
+        grid-column:1;
+        grid-row:2;
+        font-size:3.5em;
+        font-weight: bold;
+        padding-left:100px; 
+    }
+    .main__cards{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-row: 3;
+      padding-left:70px; 
+      gap:10px;
+      padding-top: 20px;
+    }
+    .main__cards__card1,.main__cards__card2,.main__cards__card3,
+    .main__cards__card4,.main__cards__card5{
+       border:2px solid #c53d3dd6;
+       padding: 20px; 
+    }
+    .main__cards__card6{
+        background-color:2px solid #c53d3dd6; 
+        padding: 20px; 
+        background-image:url(./assets/Rectangle\ 12.svg); 
+    }
+
+    .card-title{
+        font-size:1.5em;
+        font-weight: bold; 
+    }
+    .card-title-card6{
+        font-size: 1.5em;
+        font-weight: bold;
+        color:white;
+        grid-row: 2;
+        padding-top: 10px;
+        padding-bottom: 10p;   
+    }
+    .card-info{
+        font-size: 1em;
+        padding-top: 5px;   
+    }
+    #email{
+        height: 30px;
+        width: 80%; 
+    }
+    .card6__subscribebutton{
+        border-radius: 35px;
+        background:rgb(81, 3, 177);
+        align-self: center;
+        text-align:center;
+        width:120px;
+        height:30px;
+        font-size: 0.7em;
+        font-weight: bold;
+        color:aliceblue;
+        margin: 20px;    
+    }
+    .main__nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding-left: 100px;
+        padding-top: 70px;
+        color:black;
+        width: 50%;
+        font-size: 1em;  
+    }
+</style>
+<body>
+        <div class="main">
+            <div class="main__logo">
+                <img src="/week8/assets/sign.svg">
+            ВИАРУШКА
+            </div>
+            <div class="main__cartbutton">
+                КОРЗИНА
+                <img src="/week8/assets/Rectangle 2.svg">
+            </div>
+            <div class="main__title">
+                ВОЗМОЖНОСТИ
+            </div>
+            <div class="main__cards">
+                <div class="main__cards__card1">
+                    <img src="/week8/assets/Illustration_4.svg">
+
+                    <div class="card-title">
+                        БЕЗ ПРОВОДОВ
+                    </div>
+                    <div class="card-info">
+                        Шлем работает без проводов. Не нужен 
+                        ни компьютер, никвнешнее питание, ни большое 
+                        помещение, чтобы расставить трекеры.
+                    </div>
+                </div>
+                <div class="main__cards__card2">
+                    <img src="/week8/assets/Illustration_2.svg">
+
+                    <div class="card-title" >
+                        БЕЗ КОМПЬЮТЕРА
+                    </div>
+                    <div class="card-info">
+                        Современным VR-шлемам нужен
+                        мощный компьютер,чтобы запускать игры. 
+                        Наш шлем запускает игры из облака,
+                        поэтому просто наслаждайтесь.
+                    </div>
+                </div>
+                <div class="main__cards__card3">
+                    <img src="/week8/assets/Illustration_9.svg">
+                    <div class="card-title" >
+                        ДО 10 ЧАСОВ РАБОТЫ
+                    </div>
+                    <div class="card-info">
+                        Несмотря на компактность и произаодительность,
+                        шлем может работать до 10 часов - даже, если
+                        вы играете в самые ресурсоемкие игры.
+                    </div>
+                </div>
+                <div class="main__cards__card4">
+                    <div class="card-title" >
+                        СОТНИ ИГР
+                    </div>
+                    <div class="card-info">
+                        Уже сейчас вам доступно более сотни игр: от
+                        высоеобюджетных ААА-тайтлов до маленьких независимых проектов.
+                        Скоро их станет еще больше.
+                    </div>
+                </div>
+                <div class="main__cards__card5">
+                    <div class="card-title" >
+                        ПОЧТИ ДАРОМ
+                    </div>
+                    <div class="card-info">
+                        По сравнению с другими VR - шлемами наш стоит гораздо 
+                        меньше. И вы существенно экономите  на мощном компьютере.
+                    </div>
+                </div>
+                <div class="main__cards__card6">
+                  
+                    <div class="card-title-card6" >
+                        НОВОСТИ
+                    </div>
+                        <input type="email" id="email"  placeholder="Эл. почта">
+
+                        <button class="card6__subscribebutton">
+                            ПОДПИСАТЬСЯ
+                        </button>
+                    </div>
+            </div>
+            <div class="main__nav">
+                <div class="nav___opportunities">
+                    Возможности
+                </div>
+                <div class="nav__wheretobuy">
+                    Где купить
+                </div>
+                <div class="nav__delivery">
+                    Доставка
+                </div>
+                <div class="nav__help">
+                    Помощь
+                </div>
+            </div>
+        </div>
+</body>
+</html>

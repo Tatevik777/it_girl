@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .header{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 20% 1fr 1fr 1fr ;
+    }
+    .header__logo{
+        grid-column:1;
+        grid-row:1;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left:30px;
+        align-self: center;
+    }
+    .header__cartbutton{
+        border-radius: 35px;
+        background:rgb(81, 3, 177);
+        grid-column: 2;
+        grid-row:1/1;
+        align-self: center;
+        text-align: center;
+        padding-top: 10px;
+        width:110px;
+        height:35px;
+        font-size: 1em;
+        color:aliceblue;
+        justify-self: end;  
+        font-weight: bold;
+    }
+    .header__title{
+        grid-column:1;
+        grid-row:2;
+        font-size:3.5em;
+        font-weight: bold;
+        padding-left:100px;
+        
+        
+    }
+    .header__text{
+        grid-column:1; 
+        font-size: 1.5em;
+        align-self: center;
+        padding-left:100px;
+        padding-right: 50px;
+
+    }
+    .header__styleimage{
+        grid-column:2;
+        height: 100px;
+        width: 100%;  
+    }
+    .header__buybutton{
+        border-radius: 35px;
+        background:rgb(81, 3, 177);
+        grid-column: 1;
+        align-self: center;
+        text-align: center;
+        width:250px;
+        height:70px;
+        padding-top: 20px;
+        font-size: 2em;
+        color:aliceblue;
+        justify-self: center;  
+    }
+    .header__nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-column: 1;
+        color:rgb(81, 3, 177);
+        padding-left:100px;
+        font-size: 1.5em;
+        padding-top: 100px; 
+    }
+
+</style>
+<body>
+        <div class="header">
+            <div class="header__logo">
+                <img src="/week8/assets/sign.svg">
+            ВИАРУШКА
+            </div>
+            <div class="header__cartbutton">
+                КОРЗИНА
+                <img src="/week8/assets/Rectangle 2.svg">
+            </div>
+            <div class="header__styleimage">
+                <img src="/week8/assets/pic.svg" width="100%">
+            </div>
+            <div class="header__title">
+                Виртуальная реальность без проводов
+            </div>
+            <div class="header__text">
+                Лучшее,что случалось с ввиртуальным миром в реальности. Новый компактный шлем 
+                без проводов и дорогих компьютеров.
+            </div>
+           
+            <div class="header__buybutton">
+                КУПИТЬ
+                <img src="/week8/assets/ico.svg">
+            </div>
+            <div class="header__nav">
+                <div class="nav___opportunities">
+                    Возможности
+                </div>
+                <div class="nav__wheretobuy">
+                    Где купить
+                </div>
+                <div class="nav__delivery">
+                    Доставка
+                </div>
+                <div class="nav__help">
+                    Помощь
+                </div>
+            </div>
+        
+           </div> 
+</body>
+</html>
